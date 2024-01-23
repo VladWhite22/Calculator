@@ -1,5 +1,6 @@
 package com.example.calculator
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -49,6 +50,10 @@ class MainActivity : AppCompatActivity() {
             val division = number1 / number2
             textView.setText(division.toString())
 
+        }
+        button5.setOnClickListener {
+            val openMainActivity2 = Intent(this,MainActivity2::class.java)
+            startActivity(openMainActivity2)
         }
 
     }
